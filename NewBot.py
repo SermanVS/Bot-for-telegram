@@ -1,7 +1,7 @@
 import telebot
 import os
 import time
-bot = telebot.TeleBot('208047337:AAG58sXqlAtPYxoh0zdVmMJVuibiPemvMos')
+bot = telebot.TeleBot('')
 
 @bot.message_handler(content_types = ["text"])
 def find_file_ids(message):
