@@ -4,6 +4,6 @@ bot = telebot.TeleBot('208047337:AAExhltGDBgf0btSMZ8IMubB2phCNLz6WCk')
 
 @bot.message_handler(content_types = ["text"])
 def sendMessage(message):
-    bot.send_photo(message.chat.id, f, None)
+    bot.send_message(message.chat.id, "Hello!")
 if __name__ == '__main__':
     bot.polling(none_stop=True)
